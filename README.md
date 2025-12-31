@@ -79,7 +79,7 @@ Once the program is running, select **Option 5 (Performance Experiment)** to tes
 
 ## 📑 Project Slides
 
-[![Slides cover](slides/COVERIMAGE.png)](https://tinyurl.com/35b4jxa8)
+[![Slides cover](slides/COVERIMAGE.png)](https://tinyurl.com/5x4rx55c)
 **Click the image above to view the full presentation slides. Access is restricted to UTM accounts.**
 
 ---
