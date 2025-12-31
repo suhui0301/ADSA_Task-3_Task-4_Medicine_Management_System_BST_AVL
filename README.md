@@ -89,5 +89,5 @@ Once the program is running, select **Option 5 (Performance Experiment)** to tes
 
 ## 📺 Project Demo
 
-[![Watch the video](https://youtu.be/PDWffA9j2Gs)
+[![Watch the video](slides/COVERIMAGE.png)](https://youtu.be/PDWffA9j2Gs)
 **Click the image above to watch the presentation and demo of my systems.**
