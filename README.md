@@ -45,7 +45,8 @@ This repository contains two independent C++ implementations of the Medicine Man
 * **Language:** C++
 * **Data Structures:** Binary Search Tree (BST), Adelson-Velsky and Landis Tree (AVL).
 * **Concepts:** Recursive Traversal, Tree Rebalancing, Time-Complexity Analysis.
-* **Libraries:** * `<chrono>`: High-resolution time tracking for nanosecond precision.
+* **Libraries:**
+* `<chrono>`: High-resolution time tracking for nanosecond precision.
 * `<iomanip>`: Table formatting for professional console output.
 * `<fstream>`: Results logging for performance reports.
 
