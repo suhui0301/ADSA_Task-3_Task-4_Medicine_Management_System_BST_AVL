@@ -84,15 +84,11 @@ Once the program is running, select **Option 5 (Performance Experiment)** to tes
 ## 📑 Project Slides & Analysis
 
 [![Slides Cover](slides/COVERIMAGE.png)](https://tinyurl.com/44bbdf49)
-**Click the badge above to view the full Task 3 Analysis Report. Access is restricted to UTM accounts.**
+**Click the badge above to view the full presentation slides. Access is restricted to UTM accounts.**
 
 ---
 
 ## 📺 Project Demo
 
 [![Watch the video](https://img.youtube.com/vi/NgSbu7_eTZ0/maxresdefault.jpg)](https://youtu.be/NgSbu7_eTZ0)
-**Click the image above to watch the system demonstration and performance walkthrough.**
-
----
-
-**Would you like me to help you write the "Project Summary" or "About Me" section for your GitHub profile to go with this?**
+**Click the image above to watch the presentation and demo of my systems.**
