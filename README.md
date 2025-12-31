@@ -1,100 +1,98 @@
-# 💊Medicine Management Systems (BST & AVL)
+# 💊 Medicine Management System (BST vs. AVL Analysis)
 
 **Description:**
-A comprehensive pharmacy management solution comprising three independent systems/modules. 
-All systems are built using the **Binary Search Tree (BST)** data structure to ensure efficient O(log n) performance for searching, sorting, and inventory management.
+A high-performance pharmacy inventory solution designed to manage medicine batches with precision. This project serves as a technical comparative study between **Binary Search Trees (BST)** and **Self-Balancing AVL Trees**, evaluating their efficiency in high-traffic medical environments with datasets of up to 10,000 records.
 
 ---
 
+## 👤 Student Details
 
-## 👥 Group Members & Roles
-
-| Name | Matric ID | Assigned System (BST & AVL-Based) |
-| :--- | :--- | :--- |
-| **Lau Su Hui (Abby)** | MEC245045 | Medicine Management System (in C++)|
+| Name | Matric ID | Project Focus |
+| --- | --- | --- |
+| **Lau Su Hui (Abby)** | MEC245045 | Medicine Management System (C++) |
 
 ---
-
 
 ## 📂 Project Modules
 
-This repository contains three distinct independent BST-based applications/systems:
+This repository contains two independent C++ implementations of the Medicine Management System to demonstrate the performance trade-offs of different tree-based ADTs:
 
-### 1. Medicine Management System (Batch Tracking)
-**File Location:** `src/Meds Mgmt System Source Code - Group 1 Abby (Solution 1 BST).cpp`
-* **Language:** C++
-* **Description:** Manages medicine batches including expiry dates and physical shelf locations.
-* **Key Features:**
-    * Add new medicine batches with ID, Name, Quantity, Expiry, and Location.
-    * Search for specific batches using Batch ID.
-    * Delete expired or empty batches.
-    * **Performance Tracking:** Displays execution time (in nanoseconds) for operations.
+### 1. Solution 1: Binary Search Tree (BST)
 
-### 2. Pharmacy Stock System (Inventory)
-**File Location:** `src/Pharmacy Stock System Source Code - Group 1 Winnie (Solution 1 BST).cpp`
-* **Language:** C++
-* **Description:** A core inventory system for tracking stock levels and pricing.
-* **Key Features:**
-    * Pre-loaded with default stock data.
-    * Update quantity and price for existing items.
-    * Full inventory display (Sorted by ID).
-    * Robust input validation for prices and quantities.
-      
-### 3. Supplier & Vendor Management System
-**File Location:** `srcSupplier & Vendor Mgmt System Source Code - Group 1 Aini (Solution 1 BST).py`
-* **Language:** Python
-* **Description:** A system to manage pharmacy suppliers and their ratings.
-* **Key Features:**
-    * Add, Update, and Delete supplier profiles.
-    * Track Supplier Ratings (1-5 stars) and contact info.
-    * Display all suppliers sorted by ID.
-    * **Performance Tracking:** Displays execution time (in microseconds) for all BST operations.
+**File:** `UTM MECS1023 ADSA Assignment Task 4 BST Code - Lau Su Hui MEC245045.cpp`
+
+* **Performance:** High insertion speed due to zero balancing overhead (**73.29 µs** at ).
+* **Risk:** Susceptible to  linear degradation if data is entered in a sorted/skewed manner.
+
+### 2. Solution 2: AVL Tree (Self-Balancing)
+
+**File:** `UTM MECS1023 ADSA Assignment Task 4 AVL Code - Lau Su Hui MEC245045.cpp`
+
+* **Performance:** Superior search efficiency (**1.65 µs**) and guaranteed  stability.
+* **Key Mechanism:** Uses LL, RR, LR, and RL rotations to maintain a strict height balance (approx. 14 levels for 10,000 nodes).
+
+### 🚀 Core Features (Both Systems)
+
+* **Batch Tracking:** Manage Batch ID (Unique), Medicine Name, Quantity, Expiry Date, and Location.
+* **Analysis Report Mode:** Built-in "Experiment Mode" to stress-test the system with automated datasets.
+* **Data Integrity:** Mandatory pre-insertion search protocols to block duplicate Batch IDs.
+* **Future Improvement:** Proposed **"Edit Medicine Batch"** feature for direct in-place node updates.
 
 ---
-
 
 ## 🛠️ Technologies Used
-* **Languages:** C++, Python
-* **Data Structure:** Binary Search Tree (BST)
-    * Used for all Insert, Search, and Delete operations to maintain sorted data.
-    * Efficient for handling unique IDs (Batch ID, Supplier ID, Medicine ID).
-* **Libraries:** C++: `chrono` (Time tracking), `iostream`, `iomanip`
-    * Python: `numpy`, `pandas`, `time`, `os`
+
+* **Language:** C++
+* **Data Structures:** Binary Search Tree (BST), Adelson-Velsky and Landis Tree (AVL).
+* **Concepts:** Recursive Traversal, Tree Rebalancing, Time-Complexity Analysis.
+* **Libraries:** * `<chrono>`: High-resolution time tracking for nanosecond precision.
+* `<iomanip>`: Table formatting for professional console output.
+* `<fstream>`: Results logging for performance reports.
+
+
 
 ---
-
 
 ## 🚀 How to Run
 
-### Running the C++ Files (Medicine & Stock Systems)
-1. You need a C++ compiler (like G++).
-2. Open your terminal/command prompt.
-3. Navigate to the folder containing the files.
-4. Compile and run the specific module/system.
-#### -For Medicine System
-g++ "Meds Mgmt System Source Code - Group 1 Abby (Solution 1 BST).cpp" -o meds_system
-./meds_system
-#### -For Stock System
-g++ "Pharmacy Stock System Source Code - Group 1 Winnie (Solution 1 BST).cpp" -o stock_system
-./stock_system
+### 1. Compile the Source Code
 
-### Running the Python File
-1. Ensure Python is installed.
-2. Navigate to the folder containing the file.
-3. Run:
-#### -For Supplier System
-python "Supplier & Vendor Mgmt System Source Code - Group 1 Aini (Solution 1 BST).py"
+Ensure you have a C++ compiler (like G++) installed. Open your terminal and navigate to the project folder.
+
+**To run the BST Version:**
+
+```bash
+g++ "UTM MECS1023 ADSA Assignment Task 4 BST Code - Lau Su Hui MEC245045.cpp" -o meds_bst
+./meds_bst
+
+```
+
+**To run the AVL Version (Recommended):**
+
+```bash
+g++ "UTM MECS1023 ADSA Assignment Task 4 AVL Code - Lau Su Hui MEC245045.cpp" -o meds_avl
+./meds_avl
+
+```
+
+### 2. Enter "Analysis Report Mode"
+
+Once the program is running, select **Option 5 (Performance Experiment)** to test the system with 1,000 to 10,000 records and view real-time execution benchmarks.
 
 ---
 
+## 📑 Project Slides & Analysis
 
-## 📑 Project Slides
 [![Slides Cover](slides/COVERIMAGE.png)](https://tinyurl.com/44bbdf49)
-**Click the image above to view our full presentation. Access is restricted to UTM accounts only.**
+**Click the badge above to view the full Task 3 Analysis Report. Access is restricted to UTM accounts.**
 
 ---
-
 
 ## 📺 Project Demo
+
 [![Watch the video](https://img.youtube.com/vi/NgSbu7_eTZ0/maxresdefault.jpg)](https://youtu.be/NgSbu7_eTZ0)
-**Click the image above to watch the demo of our systems.**
+**Click the image above to watch the system demonstration and performance walkthrough.**
+
+---
+
+**Would you like me to help you write the "Project Summary" or "About Me" section for your GitHub profile to go with this?**
