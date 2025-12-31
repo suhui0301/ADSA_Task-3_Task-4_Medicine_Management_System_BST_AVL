@@ -1,4 +1,4 @@
-# 💊 Pharmacy Inventory Control System (Group 1)
+# 💊Medicine Management Systems (BST & AVL)
 
 **Description:**
 A comprehensive pharmacy management solution comprising three independent systems/modules. 
@@ -9,11 +9,9 @@ All systems are built using the **Binary Search Tree (BST)** data structure to e
 
 ## 👥 Group Members & Roles
 
-| Name | Matric ID | Assigned System (BST-Based) |
+| Name | Matric ID | Assigned System (BST & AVL-Based) |
 | :--- | :--- | :--- |
 | **Lau Su Hui (Abby)** | MEC245045 | Medicine Management System (in C++)|
-| **Nurul ‘Aini Binti Hamdan** | MEC245046 | Supplier & Vendor Mgmt System (in Python)|
-| **Winnie Ngu** | MEC245065 | Pharmacy Stock System (in C++)|
 
 ---
 
