@@ -17,16 +17,18 @@ A high-performance pharmacy inventory solution designed to manage medicine batch
 
 ## 📂 Project Modules
 
-This repository contains two independent C++ implementations of the Medicine Management System to demonstrate the performance trade-offs of different tree-based ADTs:
+This repository contains two independent C++ implementations of the Medicine Management System to demonstrate the performance trade-offs of two search tree-based solutions.
 
 ### 1. Solution 1: Binary Search Tree (BST)
 **File:** `UTM MECS1023 ADSA Assignment Task 4 BST Code - Lau Su Hui MEC245045.cpp`
+* **Maximun Dataset Size/Input:** N = 10,000
 * **Performance:** High insertion speed due to zero balancing overhead (**73.29 µs** at ).
 * **Risk:** Susceptible to  linear degradation if data is entered in a sorted/skewed manner.
 
 
 ### 2. Solution 2: AVL Tree (Self-Balancing)
 **File:** `UTM MECS1023 ADSA Assignment Task 4 AVL Code - Lau Su Hui MEC245045.cpp`
+* **Maximun Dataset Size/Input:** N = 10,000
 * **Performance:** Superior search efficiency (**1.65 µs**) and guaranteed  stability.
 * **Key Mechanism:** Uses LL, RR, LR, and RL rotations to maintain a strict height balance (approx. 14 levels for 10,000 nodes).
 
