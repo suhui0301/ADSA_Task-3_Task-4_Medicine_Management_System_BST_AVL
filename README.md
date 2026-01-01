@@ -33,7 +33,7 @@ This repository contains two independent C++ implementations of the Medicine Man
 * **Key Mechanism:** Uses LL, RR, LR, and RL rotations to maintain a strict height balance (approx. 14 levels for 10,000 nodes).
 
 
-### 🚀 Core Features (Both Systems)
+### 3. Core Features (Both Systems)
 * **Batch Tracking:** Manage Batch ID (Unique), Medicine Name, Quantity, Expiry Date, and Location.
 * **Analysis Report Mode:** Built-in **"Experiment Mode"** to stress-test the system with automated datasets.
 * **Data Integrity:** Mandatory pre-insertion search protocols to block duplicate Batch IDs.
