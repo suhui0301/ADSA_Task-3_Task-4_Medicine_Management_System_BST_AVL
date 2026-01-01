@@ -26,10 +26,10 @@ This repository contains two independent C++ implementations of the Medicine Man
 * **Risk:** Susceptible to  linear degradation if data is entered in a sorted/skewed manner.
 
 
-### 2. Solution 2: AVL Tree (Self-Balancing)
+### 2. Solution 2: Adelson-Velsky and Landis Tree (AVL)
 **File:** `UTM MECS1023 ADSA Assignment Task 4 AVL Code - Lau Su Hui MEC245045.cpp`
 * **Maximum Dataset Size/Input:** N = 10,000
-* **Performance:** Superior search efficiency (**1.65 µs**) and guaranteed  stability.
+* **Performance:** Superior search efficiency (**1.65 µs**) and guaranteed stability due to its self-balancing feature.
 * **Key Mechanism:** Uses LL, RR, LR, and RL rotations to maintain a strict height balance (approx. 14 levels for 10,000 nodes).
 
 
