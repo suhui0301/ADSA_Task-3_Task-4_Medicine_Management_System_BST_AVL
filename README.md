@@ -8,7 +8,7 @@ A high-performance pharmacy inventory solution designed to manage medicine batch
 
 ## 👤 Student Details
 
-| Name | Matric ID | Project Focus |
+| Name | Matric No. | Project Focus |
 | --- | --- | --- |
 | **Lau Su Hui (Abby)** | MEC245045 | Medicine Management System (C++) |
 
